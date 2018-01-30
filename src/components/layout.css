@@ -1,4 +1,4 @@
-.card {
+.contact-card {
     width: 250px;
     overflow-x: auto;
     margin: 20px;
@@ -7,4 +7,13 @@
 
 .button {
     margin: 20px;
+}
+
+.form-card {
+    width: 550px;
+    margin: 20px;
+}
+
+.card-input {
+    margin-left: 10px !important;
 }

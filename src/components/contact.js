@@ -6,7 +6,7 @@ import Card, { CardContent } from 'material-ui/Card'
 const Contact = props => {
     return (
         <div>
-            <Card className="card">
+            <Card className="contact-card">
                 <CardContent>
                     <Typography type="subheading" gutterBottom>Contact</Typography>
                     <Typography type="title">{props.name}</Typography>
