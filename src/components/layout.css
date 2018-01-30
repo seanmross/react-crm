@@ -1,0 +1,6 @@
+.card {
+    width: 250px;
+    overflow-x: auto;
+    margin: 20px;
+    float: left;
+}
