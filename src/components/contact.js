@@ -1,5 +1,5 @@
 import React from 'react';
-import './layout.css';
+import './collection.css';
 import Typography from 'material-ui/Typography'
 import Card, { CardContent } from 'material-ui/Card'
 
