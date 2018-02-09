@@ -1,9 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import Layout from './components/layout';
-import registerServiceWorker from './registerServiceWorker';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom'
+import routes from './routes'
 import 'typeface-roboto'
+import './index.css';
 
-ReactDOM.render(<Layout />, document.getElementById('root'));
-registerServiceWorker();
+render(
+    <BrowserRouter>{routes}</BrowserRouter>,
+    document.getElementById('root')
+)
+
