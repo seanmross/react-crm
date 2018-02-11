@@ -1,19 +1,18 @@
 import React, { Component } from 'react'
-import Contact from './contact'
+import Contact from './contact-card'
 import data from './data'
 import Button from 'material-ui/Button'
 import TextField from 'material-ui/TextField'
 import Card, { CardContent } from 'material-ui/Card'
-import './collection.css';
+import './contacts.css';
 import Typography from 'material-ui/Typography'
 
-class Layout extends Component {
+class Contacts extends Component {
   state = {
     name: '',
     email: ''
   }
-  // Lifecycle function
-  // Runs right before component mounts onto page
+
   componentWillMount(){
     this.setState({
       contacts: data
@@ -29,8 +28,7 @@ class Layout extends Component {
         name: this.state.name,
         email: this.state.email
     })
-    // setState()
-    // Whenever you run setState(), React knows there's a change and will update the view
+    
     this.setState({
       contacts: contacts
     }, () => this.setState({
@@ -79,4 +77,4 @@ class Layout extends Component {
     )
   }
 }
-export default Layout
+export default Contacts
