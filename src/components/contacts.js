@@ -48,22 +48,24 @@ class Contacts extends Component {
       <CardContent>
         <Typography type="subheading" gutterBottom>New Contact</Typography>
         <form noValidate autoComplete="off" onSubmit={ this.handleFormSubmit }>
-          <TextField
-            onChange={this.handleFormInputChange('name')}
-            value={this.state.name}
-            className="card-input" 
-            label="Name" 
-            type="text" 
-            placeholder="Name">
-          </TextField>
-          <TextField
-            onChange={this.handleFormInputChange('email')}
-            value={this.state.email}
-            label="Email" 
-            type="email"
-            placeholder="Email">
-          </TextField>
-          <Button type="submit" className="button" raised color="secondary">+ Add Contact</Button>
+        <Typography align="center">
+            <TextField
+              onChange={this.handleFormInputChange('name')}
+              value={this.state.name}
+              className="card-input"
+              label="Name"
+              type="text"
+              placeholder="Name">
+            </TextField>
+            <TextField
+              onChange={this.handleFormInputChange('email')}
+              value={this.state.email}
+              label="Email"
+              type="email"
+              placeholder="Email">
+            </TextField>
+            <Button type="submit" className="button" raised color="secondary">+ Add Contact</Button>
+        </Typography>
         </form>
       </CardContent>
     </Card>
